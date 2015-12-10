@@ -2,59 +2,113 @@
 <html>
 <head>
 	<title>RadicalPhoto</title>
-	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
-	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--Error: Attribute integrity not allowed on element link at this point. BOOTSTRAP CHARACTERS	-->
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+	<link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-<div id="header">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="gallery.html">Gallery</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="contact.html">Contact</a>
-	</ul>
-
-	<h1>RadicalPhoto</h1>
-
-</div>
-
-<div id="main_wrapper">
-
-	<div id="content">
-	<h2>Page heading</h2>
-
-	<div id="slider">
-	    <img src="images/slider_alligator.jpg" title="Chomp">
-		<p>Award Winning Photography</p>
+<div class="container">
+<nav class="navbar navbar-default">
+ 	<h1>Radical<small>Photo</small></h1>
+  	  	<div class="container-fluid">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">H<small>ome</small></a></li>
+				<li><a href="gallery.html">G<small>allery</small></a></li>
+				<li><a href="about.html">A<small>bout</small></a></li>
+				<li><a href="contact.html">C<small>ontact</small></a>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron text-center center-block">
+	<h2>Page <small>heading</small></h2>
+	<div id="slideshow" class="fotorama" data-width="100%" data-maxwidth="600" data-height="auto" data-nav="thumbs" data-autoplay="3000" data-loop="true" >
+	    <img src="images/slider_alligator.jpg" width="600" height="275" alt="alligator">
+		<img src="images/slider_cow.jpg" width="600" height="275" alt="cow with road sign">
+		<img src="images/slider_ladybug.jpg" width="600" height="275" alt="lady bug on leaf">
+		<img src="images/slider_turtle.jpg" width="600" height="275" alt="tutle swimming">
 	</div>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-
 	</div>
-
-	<div id="footer">
+	<br>
+<article>
+<!--Warning: Article lacks heading. Consider using h2-h6 elements to add identifying headings to all articles. THIS WILL BE NOT IMPORTANT FOR THIS EXAMPLE-->
+	<div class="row">
+	<div class="col-xs-3">
+	<div class="grey">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+	</div>
+	</div>
+	<div class="col-xs-3">
+	<div class="grey">
+	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+	</div>
+	</div>
+	<div class="col-xs-3">
+	<div class="grey">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+	</div>
+	</div>
+	<div class="col-xs-3">
+	<div class="grey">
+	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+	</div>
+	</div>
+	</div>
+	<br>
+	<div class="row">
+	<div class="col-xs-2">
+	<div class="grey">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+	</div>
+	</div>
+	<div class="col-xs-2">
+	<div class="grey">
+	<strong>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</strong>
+	</div>
+	</div>
+	<div class="col-xs-2">
+	<div class="grey">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+	</div>
+	</div>
+	<div class="col-xs-2">
+	<div class="grey">
+	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+	</div>
+	</div>
+	<div class="col-xs-2">
+	<div class="grey">
+	<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</strong>
+	</div>
+	</div>
+	<div class="col-xs-2">
+	<div class="grey">
+	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+	</div>
+	</div>
+	</div>
+	<br>
+	<div class="row">
+	<div class="col-xs-6 lead">
+	<div class="grey">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+	</div>
+	</div>
+	<div class="col-xs-6 lead">
+	<div class="grey">
+	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+	</div>
+	</div>
+	</div>
+</article>
+<footer>
 	<p>All content &copy; Copyright</p>
-	</div>
+	</footer>
 
 </div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
 
 </body>
 </html>

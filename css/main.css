@@ -1,0 +1,25 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+	margin-left: 3%;
+	font-weight: bold;
+	font-size: 3.5em;
+}
+h2{
+	font-weight: bold;
+	font-size: 3em;
+}
+nav{
+	font-size: 1.8em;
+	font-weight: bold;
+}
+.grey{
+	background:#eee;
+	padding: 3%;
+}
+
+/*to have the slideshow center*/
+.fotorama__wrap {
+    margin: 0 auto;
+}

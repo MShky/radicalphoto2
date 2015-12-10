@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RadicalPhoto About</title>
-	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
-	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
+	<title>RadicalPhoto</title>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--Error: Attribute integrity not allowed on element link at this point. BOOTSTRAP CHARACTERS	-->
+	<link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="container">
+<nav class="navbar navbar-default">
+ 	<h1>Radical<small>Photo</small></h1>
+  	  	<div class="container-fluid">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">H<small>ome</small></a></li>
+				<li><a href="gallery.html">G<small>allery</small></a></li>
+				<li><a href="about.html">A<small>bout</small></a></li>
+				<li><a href="contact.html">C<small>ontact</small></a>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron">
+	<h2>About <small>RadicalPhoto</small></h2>
 
-<div id="header">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="gallery.html">Gallery</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="contact.html">Contact</a>
-	</ul>
-
-	<h1>RadicalPhoto</h1>
-
-</div>
-
-<div id="main_wrapper">
-
-	<div id="content">
-	<h2>About RadicalPhoto</h2>
-
-	<p>Today is <span>July 17, 2015</span>. Stay tuned, we have exciting news about our company coming in a few more weeks!</p>
+	<div class="lead">Today is <span>July 17, 2015</span>. Stay tuned, we have exciting news about our company coming in a few more weeks!</div>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
 	<h3>Our Team</h3>
 
 	<p id="bios">
-		<a href="sheila.html">Sheila</a> (President) | 
-		<a href="frank.html">Frank</a> (Vice President) | 
-		<a href="joanne.html">Joanne</a> (Senior Photographer)
+		<a href="sheila.html" id="sheila">Sheila</a> (President) | 
+		<a href="frank.html" id="frank">Frank</a> (Vice President) | 
+		<a href="joanne.html" id="joanne">Joanne</a> (Senior Photographer)
 	</p> 
 
 	<div id="bio"></div>
-
+	
 	</div>
 
 	<div id="footer">
@@ -46,5 +45,39 @@
 
 </div>
 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/about.js"></script>
+		
+		
+		<script>
+	// load .content_area
+	// sheila.html / frank.html / joanne.html
+	// Ajax 	
+	
+		var content_area = $(".content_area").val();
+		var bio = $("#bio");
+		
+		$("#sheila").click(function(event){
+  			event.preventDefault();
+			bio.load("sheila.html .content_area");
+  		});
+		
+		$("#frank").click(function(event){
+  			event.preventDefault();
+			bio.load("frank.html .content_area");
+  		});
+		
+		$("#joanne").click(function(event){
+  			event.preventDefault();
+			bio.load("joanne.html .content_area");
+  		});
+			
+			
+			
+			
+			
+		</script>
+
+		
 </body>
 </html>

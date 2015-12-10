@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RadicalPhoto Contact</title>
-	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
-	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
+	<title>RadicalPhoto</title>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--Error: Attribute integrity not allowed on element link at this point. BOOTSTRAP CHARACTERS	-->
+	<link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="container">
+<nav class="navbar navbar-default">
+ 	<h1>Radical<small>Photo</small></h1>
+  	  	<div class="container-fluid">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">H<small>ome</small></a></li>
+				<li><a href="gallery.html">G<small>allery</small></a></li>
+				<li><a href="about.html">A<small>bout</small></a></li>
+				<li><a href="contact.html">C<small>ontact</small></a>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron">
+	<h2>Contact <small>RadicalPhoto</small></h2>
+	<div class="lead">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</div>
 
-<div id="header">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="gallery.html">Gallery</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="contact.html">Contact</a>
-	</ul>
-
-	<h1>RadicalPhoto</h1>
-
-</div>
-
-<div id="main_wrapper">
-
-	<div id="content">
-	<h2>Contact RadicalPhoto</h2>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-	<form action="http://derekallard.com/echo.php" method="post" id="myform">
-
+	<form action="http://derekallard.com/echo.php" method="post" id="myform" class="form-horizontal">
+	<div class="form-group">
 		<p class="errors">All fields are required.</p>
-
-		<p><label>Name: <input type="text" size="25" name="name" id="username"></label></p>
-		<p><label>Email: <input type="text" size="25" name="email" id="email"></label></p>
-		<p><label>Message:<br> <textarea cols="50" rows="5" name="message" id="my_message"></textarea></label></p>
-		<p><input type="submit" value="Contact Us"></p>
+		<br>
+		<p><label for="user_name" class="col-sm-2 control-label">Name: <span id="user_name_error"></span></label>
+		<input type="text" size="51" name="user_name" id="user_name"></p>
+		<br>
+		<p><label for="user_email" class="col-sm-2 control-label">Email: <span id="user_email_error"></span></label>
+		<input type="text" size="51" name="user_email" id="user_email"></p>
+		<br>
+		<p><label for="user_message" class="col-sm-2 control-label">Message:<span id="user_message_error"></span> </label>
+		<br> 
+		<textarea cols="50" rows="5" name="user_message" id="user_message"></textarea></p>
+		<br>
+		<p><input type="submit" name="submit" value="Contact Us" class="col-sm-2" ></p>
+		</div>
 	</form>
 
 	</div>
@@ -43,6 +50,47 @@
 	</div>
 
 </div>
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+	<script>
+		var myform = $("#myform");
+		
+	$("#myform").submit(function(event) {
+		var errors = 0;
+		var valname = $("#user_name").val();
+		var valemail = $("#user_email").val();
+		var valmessage = $("#user_message").val();
+		
+		if (valname == "") {
+			$("#user_name_error").text("Name cannot be blank");
+			errors++;
+		} else {
+			$("#user_name_error").text("");
+		}
+			
+		if (valemail == "") {
+			$("#user_email_error").text("Email cannot be blank");
+			errors++;
+		} else {
+			$("#user_email_error").text("");
+		}
+			
+		if (valmessage == "") {
+			$("#user_message_error").text("The message cannot be blank");
+			errors++;
+		}else {
+			$("#user_message_error").text("");
+		}
+			
+		if (errors > 0) {
+			event.preventDefault();
+		}
+	});
+	
+	</script>
+
 
 </body>
 </html>
